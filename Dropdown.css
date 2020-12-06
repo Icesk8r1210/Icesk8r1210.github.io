@@ -1,0 +1,114 @@
+/*Text Style*/
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: rgb(43, 42, 42);
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+}
+h2 {
+    color: rgb(43, 42, 42);
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px;
+}
+p {
+    color: rgb(43, 42, 42);
+    text-align: center;
+    text-indent: 40px;
+    font-size: 30px;
+    font-family: cursive;
+}
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 12px solid rgb(95, 92, 92);
+}
+
+/*Bar Code*/
+
+/*Style Bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffcae4;
+  }
+  /*Text left to right*/
+  li {
+    float: left;
+  }
+  /*Style Home and Skating Button*/
+  li a, .dropbtn {
+    display: inline-block;
+    color: #414141;
+    background-color: #ffcae4;
+    text-align: center;
+    min-width: 150px;
+    font-family: cursive;
+    padding: 16px;
+    text-decoration: none;
+    border: none;
+  }
+  /*Change the color of the button when you hover over the button*/
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffdbec;
+  }
+
+  /*Box dropdown*/
+
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  /*Dropdown Adventures Code*/
+  
+  /* Style The Dropdown Button */
+  .dropbtn {
+    background-color: #ffcae4;
+    color: #414141;
+    padding: 16px;
+    min-width: 150px;
+    font-size: 16px;
+    font-family: cursive;
+    border: none;
+    cursor: pointer;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    background-color: #ffcae4;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #414141;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: cursive;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ffdbec
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #ffdbec;
+  }
