@@ -576,12 +576,17 @@ function jumpBV (letter) {
   }
 
   if (letter == "A") {
-    jumpResult = BV + "0";
+    jumpResult = BV;
   } else if (letter == "B") {
     BVB = BVB + BV;
-    jumpResult = (BVB) + "0";
+    jumpResult = (BVB);
   } else if (letter == "C") {
-    jumpResult = (BVC + BV) + "0";
+    jumpResult = (BVC + BV);
+  }
+  if (jumpResult % 1 == 0){
+    jumpResult = jumpResult + ".00";
+  } else {
+    jumpResult = jumpResult + "0";
   }
 }
 
