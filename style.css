@@ -1,0 +1,290 @@
+body {
+  background: #000;
+  color: #fff;
+  padding: 25px;
+  font-family: sans-serif;
+}
+
+#elements {
+  display: none;
+}
+
+#comboJump {
+  display: none;
+}
+
+#jumps1 {
+  display: none;
+}
+
+#jumps2 {
+  display: none;
+}
+
+#jumps3 {
+  display: none;
+}
+
+#rotations1 {
+  display: none;
+}
+
+#rotations2 {
+  display: none;
+}
+
+#rotations3 {
+  display: none;
+}
+
+#plus1 {
+  display: none;
+}
+
+#plus2{
+  display: none;
+}
+
+#level {
+  display: block;
+}
+
+#enter {
+  display: none;
+  background-color: white;
+}
+
+#confirm {
+  display: none;
+}
+
+#comboSelect {
+    display: none;
+}
+
+#flyNoFly {
+  display: none;
+}
+
+#changeFoot {
+  display: none;
+}
+
+#changePosition {
+  display: none;
+}
+
+#type {
+  display: none;
+}
+
+#spinLevel {
+  display: none;
+}
+
+#stepsChoreo {
+  display: none;
+}
+
+#stepLevel {
+  display: none;
+}
+
+#element1 {
+  display: none;
+}
+
+#element2 {
+  display: none;
+}
+
+#element3 {
+  display: none;
+}
+
+#element4 {
+  display: none;
+}
+
+#element5 {
+  display: none;
+}
+
+#element6 {
+  display: none;
+}
+
+#element7 {
+  display: none;
+}
+
+#element8 {
+  display: none;
+}
+
+#element9 {
+  display: none;
+}
+
+#element10 {
+  display: none;
+}
+
+#element11 {
+  display: none;
+}
+
+#bv1 {
+  display: none;
+  padding-left: 40px;
+}
+
+#bv2 {
+  display: none;
+  padding-left: 40px;
+}
+
+#bv3 {
+  display: none;
+  padding-left: 40px;
+}
+
+#bv4 {
+  display: none;
+  padding-left: 40px;
+}
+
+#bv5 {
+  display: none;
+  padding-left: 40px;
+}
+
+#bv6 {
+  display: none;
+  padding-left: 40px;
+}
+
+#bv7 {
+  display: none;
+  padding-left: 40px;
+}
+
+#bv8 {
+  display: none;
+  padding-left: 40px;
+}
+
+#bv9 {
+  display: none;
+  padding-left: 40px;
+}
+
+#bv10 {
+  display: none;
+  padding-left: 40px;
+}
+
+#bv11 {
+  display: none;
+  padding-left: 40px;
+}
+
+#X1 {
+  display: none;
+}
+
+#X2 {
+  display: none;
+}
+
+#X3 {
+  display: none;
+}
+
+#X4 {
+  display: none;
+}
+
+#X5 {
+  display: none;
+}
+
+#X6 {
+  display: none;
+}
+
+#X7 {
+  display: none;
+}
+
+#X8 {
+  display: none;
+}
+
+#X9 {
+  display: none;
+}
+
+#X10 {
+  display: none;
+}
+
+#X11 {
+  display: none;
+}
+
+#E1 {
+  display: none;
+}
+
+#E2 {
+  display: none;
+}
+
+#E3 {
+  display: none;
+}
+
+#E4 {
+  display: none;
+}
+
+#E5 {
+  display: none;
+}
+
+#E6 {
+  display: none;
+}
+
+#E7 {
+  display: none;
+}
+
+#E8 {
+  display: none;
+}
+
+#E9 {
+  display: none;
+}
+
+#E10 {
+  display: none;
+}
+
+#E11 {
+  display: none;
+}
+
+#calculate {
+  display: none;
+}
+
+#total {
+  display: none;
+}
+
+#totalNum {
+  display: none;
+}

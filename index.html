@@ -1,71 +1,154 @@
-<!-- C:\Users\emily\OneDrive\Desktop\Visual_Studio_Projects\HTML_Projects\index.html -->
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <title>Emily's Website!</title>
-    </head>
-    <body>
-        <ul>
-            <li><a href="https://icesk8r1210.github.io/">Home</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Skating</a>
-                <div class="dropdown-content">
-                  <a href="https://icesk8r1210.github.io/Freeskate.html">Freeskate</a>
-                  <a href="https://icesk8r1210.github.io/Moves_In_The_Field.html">Moves in the Field</a>
-                  <a href="https://icesk8r1210.github.io/Compettions.html">Compettions</a>
-                </div>
-            </li>
-            <li class="dropdown">
-              <a href="javascript:void(0)" class="dropbtn">Adventures</a>
-              <div class="dropdown-content">
-                <a href="https://icesk8r1210.github.io/canaan.html">Canaan</a>
-                <a href="https://icesk8r1210.github.io/Dinsey.html">Dinsey</a>
-                <a href="https://icesk8r1210.github.io/Myrtle_Beach.html">Myrtle Beach</a>
-              </div>
-            </li>
-          </ul>
-        <h1>
-            Welcome To My Website!
-        </h1>
-        <img src="https://time.com/wp-content/uploads/2017/10/229-westerlund-21.jpg?w=2000" alt="This is a space image">
-        <h2>
-            A Little About Me!
-        </h2>
-        <p class= 'tab'>
-            Hello everyone! My name is Emily. I like math, space, and of course, cats! I am a figure skater and 
-            I really enjoy it! I am currently working on my Junior Moves In The Field. I was planning to go to regionals
-            this year and compete at the juvenile level. Sadly it was canceled because of the Coronavirus. I can do a double
-            sal, double toe loop, double loop, and a double flip. I am also working on my double lutz and double axel.
-            I'm getting pretty close though.
-        </p>
-        <p class= 'tab'>
-            Well, that's just a little bit about me! Stay tuned to hear about more of my adventures and fun with my friends!
-        </p>
-        <hr>
-        <h2>
-            Week Of: 11/29 Thru 12/5
-        </h2>
-        <p>
-            I had a lot going on this week. My grandma left on Sunday to go back to her house. I also got my new skates on 
-            Friday! I really like them. We also ate cheesecake at the Cheesecake Factory! I also had online school on Monday, 
-            Tuesday, and Wednesday. We ended up having in person school on Thursday and Friday. I missed school on Friday though
-            because that was when I went to get my new skates. On Wednesday, my dad and I decided to go out and look at the sun
-            with our telescope. It looked pretty cool! We also took some pictures. After he edited them, they looked even
-            cooler! Other than that not much else happened.
-        </p>
-        <hr>
-        <h2>
-            Week Of: 12/6 Thru 12/12
-        </h2>
-        <p>
-            Comming Soon....
-        </p>
-        <hr>
-        <h4>
-            Please do not share this website with others. This is just a personal project for programming practice. Thank you.
-        </h4>
-    </body>
+<html>
+<head>
+  <title>Base Value Calculator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title">Base Value Calculator</h1>
+  <p>This will calculate your base value.</p>
+
+  <select id="level" onchange = "levelDropDown()">
+    <option> Level </option>
+    <option> Juvenile </option>
+    <option> Intermediate </option>
+    <option> Novice </option>
+    <option> Junior </option>
+    <option> Senior </option>
+  </select>
+  <select id="shortLong" onchange = "levelDropDown()">
+    <option> Program </option>
+    <option> Short </option>
+    <option> Freeskate </option>
+  </select>
+  <p id="levelResult"></p>
+  <p id="numOfElements"></p>
+
+  <select id = "elements" onchange = "dropDowns()">
+    <option value = "default">Element</option>
+    <option>Jump</option>
+    <option>Spin</option>
+    <option>Other</option>
+  </select>
+
+  <select id="comboJump" onchange="comboJumpSelect()">
+    <option value = "default"> Select </option>
+    <option> Solo jump </option>
+    <option> 2 Jump Combination </option>
+    <option> 3 Jump Combination </option>
+  </select>
+  <select id = "rotations1">
+    <option value = "default"> # of rotations </option>
+    <option> 1 </option>
+    <option> 2 </option>
+    <option> 3 </option>
+    <option> 4 </option>
+  </select>
+  <select id = "jumps1" onchange = "jumpCodes(1)"> 
+    <option id="jumpsDefault1" value = "default"> Select Jump </option>
+    <option> Axel </option>
+    <option> Sal </option>
+    <option> Toe </option>
+    <option> Loop </option>
+    <option> Flip </option>
+    <option> Lutz </option>
+  </select>
+  <button id="plus1"> + </button>
+  <select id = "rotations2">
+    <option value = "default"> # of rotations </option>
+    <option> 1 </option>
+    <option> 2 </option>
+    <option> 3 </option>
+    <option> 4 </option>
+  </select>
+  <select id = "jumps2" onchange = "jumpCodes(2)"> 
+    <option id="jumpsDefault2" value = "default"> Select Jump </option>
+    <option> Axel </option>
+    <option> Sal </option>
+    <option> Toe </option>
+    <option> Loop </option>
+    <option> Flip </option>
+    <option> Lutz </option>
+  </select>
+  <button id="plus2"> + </button>
+  <select id = "rotations3">
+    <option value = "default"> # of rotations </option>
+    <option> 1 </option>
+    <option> 2 </option>
+    <option> 3 </option>
+    <option> 4 </option>
+  </select>
+  <select id = "jumps3" onchange = "jumpCodes(3)"> 
+    <option id="jumpsDefault3" value = "default"> Select Jump </option>
+    <option> Axel </option>
+    <option> Sal </option>
+    <option> Toe </option>
+    <option> Loop </option>
+    <option> Flip </option>
+    <option> Lutz </option>
+  </select>
+
+  <select id="comboSelect" onchange = "comboChange()">
+    <option value = "default"> Select </option>
+    <option> Solo spin </option>
+    <option> Combination spin </option>
+  </select>
+  <select id="flyNoFly">
+    <option value = "default"> Select </option>
+    <option> Fly </option>
+    <option> No fly </option>
+  </select>
+  <select id="changeFoot">
+    <option value = "default"> Select </option>
+    <option>Change of foot</option>
+    <option>No change of foot</option>
+  </select>
+  <select id="type">
+    <option value = "default"> Select </option>
+    <option> Upright </option>
+    <option> Layback </option>
+    <option> Camel </option>
+    <option> Sit </option>
+  </select>
+  <select id="spinLevel">
+    <option value = "default"> Level </option>
+    <option> B </option>
+    <option> 1 </option>
+    <option> 2 </option>
+    <option> 3 </option>
+    <option> 4 </option>
+  </select>
+
+  <select id="stepsChoreo" onchange="stepsOther()"> 
+    <option value = "default"> Select </option>
+    <option> Step Sequence </option>
+    <option> Choreographic Sequence </option>
+  </select>
+  <select id="stepLevel">
+    <option value = "default"> Level </option>
+    <option> B </option>
+    <option> 1 </option>
+    <option> 2 </option>
+    <option> 3 </option>
+    <option> 4 </option>
+  </select>
+
+  <button id= "enter" onclick = "enterOrConfirm()"> Enter </button>
+  <br><br> <button id="E1" onclick="edit(1)"> Edit </button> <button id="X1" onclick="Xdelete(1)"> X </button> <label id="element1"></label> <label id="bv1"> 0 </label> <br> <br>
+  <button id="E2" onclick="edit(2)"> Edit </button> <button id="X2" onclick="Xdelete(2)"> X </button> <label id="element2"></label> <label id="bv2"> 0 </label> <br> <br>
+  <button id="E3" onclick="edit(3)"> Edit </button> <button id="X3" onclick="Xdelete(3)"> X </button> <label id="element3"></label> <label id="bv3"> 0 </label> <br> <br>
+  <button id="E4" onclick="edit(4)"> Edit </button> <button id="X4" onclick="Xdelete(4)"> X </button> <label id="element4"></label> <label id="bv4"> 0 </label> <br> <br>
+  <button id="E5" onclick="edit(5)"> Edit </button> <button id="X5" onclick="Xdelete(5)"> X </button> <label id="element5"></label> <label id="bv5"> 0 </label> <br> <br>
+  <button id="E6" onclick="edit(6)"> Edit </button> <button id="X6" onclick="Xdelete(6)"> X </button> <label id="element6"></label> <label id="bv6"> 0 </label> <br> <br>
+  <button id="E7" onclick="edit(7)"> Edit </button> <button id="X7" onclick="Xdelete(7)"> X </button> <label id="element7"></label> <label id="bv7"> 0 </label> <br> <br>
+  <button id="E8" onclick="edit(8)"> Edit </button> <button id="X8" onclick="Xdelete(8)"> X </button> <label id="element8"></label> <label id="bv8"> 0 </label> <br> <br>
+  <button id="E9" onclick="edit(9)"> Edit </button> <button id="X9" onclick="Xdelete(9)"> X </button> <label id="element9"></label> <label id="bv9"> 0 </label> <br> <br>
+  <button id="E10" onclick="edit(10)"> Edit </button> <button id="X10" onclick="Xdelete(10)"> X </button> <label id="element10"></label> <label id="bv10"> 0 </label> <br> <br>
+  <button id="E11" onclick="edit(11)"> Edit </button> <button id="X11" onclick="Xdelete(11)"> X </button> <label id="element11"></label> <label id="bv11"> 0 </label> <br> <br>
+
+  <button id="calculate" onclick="calculateBV()"> Calculate! </button>
+  <label id="total"> Total Base Value: </label> <label id="totalNum"> 0 </label>
+  <script src="script.js"></script>
+</body>
 </html>
