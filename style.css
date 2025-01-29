@@ -134,6 +134,14 @@ body {
   display: none;
 }
 
+#element12 {
+  display: none;
+}
+
+#element13 {
+  display: none;
+}
+
 #bv1 {
   display: none;
   padding-left: 40px;
@@ -189,6 +197,11 @@ body {
   padding-left: 40px;
 }
 
+#bv12 {
+  display: none;
+  padding-left: 40px;
+}
+
 #X1 {
   display: none;
 }
@@ -233,6 +246,10 @@ body {
   display: none;
 }
 
+#X12 {
+  display: none;
+}
+
 #E1 {
   display: none;
 }
@@ -274,6 +291,10 @@ body {
 }
 
 #E11 {
+  display: none;
+}
+
+#E12 {
   display: none;
 }
 
