@@ -316,6 +316,9 @@ function enterOrConfirm () {
 
 function enterButton () {
   index = index + 1;
+  if (index > 12){
+    return
+  }
   var ID = document.getElementById("element" + index);
   var bv = document.getElementById("bv" + index);
   var X = document.getElementById("X" + index);
